@@ -1,0 +1,14 @@
+version: "3"
+services:
+  martklib:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+    command: /bin/bash
+    volumes:
+      - ~/.ssh:/root/.ssh
+      - .:/usr/martklib
+      - /tmp:/tmp
+    ports:
+      - "1234:1234"

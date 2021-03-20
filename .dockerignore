@@ -1,0 +1,6 @@
+doc
+.git*
+*.txt
+*.sh
+Dockerfile
+docker-compose.yml
